@@ -18,18 +18,18 @@ h1 {
 }
 
 h2 {
-  font-size: 20px;
+  font-size: 32px;
   position: absolute;
   left: 82%;
   top: 80%
 }
 
 h3 {
-  font-size: 12.5px;
+  font-size: 15px;
   font-style: italic;
   position: absolute;
   left: 82%;
-  top: 84%
+  top: 87.5%
 }
 
 h4 {
@@ -41,4 +41,31 @@ h4 {
 
 body {
   background-color: #f5f5dc;
+}
+
+.cow-placement {
+  position: absolute;
+  width: 320px;
+  height: 320px;
+  left: 140px;
+  top: 280px;
+
+}
+
+.bee-placement {
+  position: absolute;
+  width: 320px;
+  height: 320px;
+  left: 740px;
+  top: 280px;
+
+}
+
+.penguin-placement {
+  position: absolute;
+  width: 320px;
+  height: 320px;
+  left: 1340px;
+  top: 280px;
+
 }
