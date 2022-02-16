@@ -6,3 +6,39 @@ html, body {
 canvas {
   display: block;
 }
+
+h1 {
+  font-size: 75px;
+  position: absolute;
+  color: red;
+  left: 2.5%;
+  top: 2.5%;
+  z-index: 2;
+  font-family: fantasy
+}
+
+h2 {
+  font-size: 20px;
+  position: absolute;
+  left: 82%;
+  top: 80%
+}
+
+h3 {
+  font-size: 12.5px;
+  font-style: italic;
+  position: absolute;
+  left: 82%;
+  top: 84%
+}
+
+h4 {
+  font-size: 20px;
+  position: absolute;
+  left: 3.5%;
+  top: 15%;
+}
+
+body {
+  background-color: #f5f5dc;
+}
