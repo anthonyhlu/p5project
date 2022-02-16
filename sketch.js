@@ -7,13 +7,13 @@ let penguinImg;
 
 function preload() {
   cowImg = createImg("https://i.imgur.com/yf0MajD.jpg"); 
-  beeImg = loadImage("https://i.imgur.com/h2mt3sI.jpg");
-  penguinImg = loadImage("https://i.imgur.com/6CdUJfY.jpg");
+  beeImg = createImg("https://i.imgur.com/h2mt3sI.jpg");
+  penguinImg = createImg("https://i.imgur.com/q0bomhN.jpg");
 
 }
 
 function setup() {
-  createCanvas(1000, 1000);
+  createCanvas(displayWidth);
   nextStepButton = createButton("next step");
   nextStepButton.position(750, 850);
   nextStepButton.size(300)
@@ -31,13 +31,15 @@ function setup() {
   nextStepButton.style("font",'comic-sans');
   cowImg.mousePressed(drawCow)
   cowImg.position(150, 250);
-  image(beeImg, 700, 250);
-  image(penguinImg, 1300, 250);
+  beeImg.position(750, 250);
+  penguinImg.position(1350, 250);
 
 }
 
 function drawCow() {
-  ellipse(100, 100, 100, 100);
+  cowImg.hide();
+  beeImg.hide();
+  penguinImg.hide();
 }
 
 function draw() {
