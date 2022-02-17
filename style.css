@@ -25,11 +25,11 @@ h2 {
 }
 
 h3 {
-  font-size: 15px;
+  font-size: 25px;
   font-style: italic;
   position: absolute;
-  left: 82%;
-  top: 87.5%
+  left: 20%;
+  top: 85.5%
 }
 
 h4 {
@@ -37,6 +37,13 @@ h4 {
   position: absolute;
   left: 3.5%;
   top: 15%;
+}
+
+h5 {
+  font-size: 40px;
+  position: absolute;
+  left: 70%;
+  top: 80%
 }
 
 body {

@@ -4,11 +4,18 @@ var cowImg;
 let chickenImg;
 let pigImg;
 let penguinImg;
+let howToCow;
+let howToBee;
+let howToPenguin;
 
 function preload() {
   cowImg = createImg("https://i.imgur.com/EUFLyLD.jpg"); 
   beeImg = createImg("https://i.imgur.com/Ot6AaZB.jpg");
   penguinImg = createImg("https://i.imgur.com/KgD1dYm.jpg");
+  howToCow = createImg("");
+  howToBee = createImg("");
+  howToPenguin = createImg("");
+
 
 }
 
@@ -17,8 +24,8 @@ function setup() {
   nextStepButton = createButton("next step");
   nextStepButton.position(750, 800);
   nextStepButton.size(300)
-  nextStepButton.hide();
   nextStepButton.mousePressed();
+  nextStepButton.hide();
   //drawCowButton = createButton("draw a cow");
   //drawCowButton.mousePressed(drawCow);
   //drawCowButton.position(200, 620);
@@ -30,10 +37,13 @@ function setup() {
   //drawPenguinButton.position(1400, 620);
   //drawPenguinButton.size(200);
   nextStepButton.style("font",'comic-sans');
-  cowImg.mousePressed(drawCow)
+  cowImg.mousePressed(drawCow);
   cowImg.position(0.02 * window.innerWidth, 0.3 * window.innerHeight);
   beeImg.position(0.355 * window.innerWidth, 0.3 * window.innerHeight);
-  penguinImg.position(0.69 * window.innerWidth, 0.3 * window.innerHeight);;
+  penguinImg.position(0.69 * window.innerWidth, 0.3 * window.innerHeight);
+  beeImg.mousePressed(drawBee);
+  penguinImg.mousePressed(drawPenguin);
+  
 
 }
 
@@ -44,8 +54,34 @@ function drawCow() {
   drawCowButton.hide();
   drawBeeButton.hide();
   drawPenguinButton.hide();
+  nextStepButton.hide();
+  //howToCow();
+
+}
+
+function drawBee() {
+  cowImg.hide();
+  beeImg.hide();
+  penguinImg.hide();
+  drawCowButton.hide();
+  drawBeeButton.hide();
+  drawPenguinButton.hide();
   nextStepButton.show();
 }
+
+function drawPenguin() {
+  cowImg.hide();
+  beeImg.hide();
+  penguinImg.hide();
+  drawCowButton.hide();
+  drawBeeButton.hide();
+  drawPenguinButton.hide();
+  nextStepButton.show();
+}
+
+//function howToCow() {
+
+//}
 
 function draw() {
 
