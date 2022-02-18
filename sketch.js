@@ -10,35 +10,19 @@ function preload() {
   cowImg = createImg("https://i.imgur.com/EUFLyLD.jpg"); 
   beeImg = createImg("https://i.imgur.com/Ot6AaZB.jpg");
   penguinImg = createImg("https://i.imgur.com/KgD1dYm.jpg");
-  howToCowStep1 = createImg("https://imgur.com/nXYFP6n.jpg");
-  howToCowStep2 = createImg("https://imgur.com/rtBEIAp.jpg");
-  howToCowStep3 = createImg("https://imgur.com/Rm2s8OD.jpg");
+  howToCowStep1 = createImg("https://imgur.com/DspvZqT.jpg");
+  howToCowStep2 = createImg("https://imgur.com/M22X13a.jpg");
+  howToCowStep3 = createImg("https://imgur.com/ehCPSwx.jpg");
   howToBeeStep1 = createImg("https://imgur.com/xDu2W7v.jpg");
   howToBeeStep2 = createImg("https://imgur.com/JmW5rAz.jpg");
   howToBeeStep3 = createImg("https://imgur.com/dijJCAS.jpg");
-  howToPenguinStep1 = createImg("");
-  howToPenguinStep2 = createImg("");
-  howToPenguinStep3 = createImg("");
+  howToPenguinStep1 = createImg("https://imgur.com/roHQRAE.jpg");
+  howToPenguinStep2 = createImg("https://imgur.com/ECBYs5p.jpg");
+  howToPenguinStep3 = createImg("https://imgur.com/y4b00pq.jpg");
 }
 
 function setup() {
   createCanvas(displayWidth);
-  // nextStepButton = createButton("next step");
-  // nextStepButton.position(750, 800);
-  // nextStepButton.size(300)
-  // nextStepButton.mousePressed();
-  // nextStepButton.hide();
-  //drawCowButton = createButton("draw a cow");
-  //drawCowButton.mousePressed(drawCow);
-  //drawCowButton.position(200, 620);
-  //drawCowButton.size(200);
-  //drawBeeButton = createButton("draw a bee");
-  //drawBeeButton.position(800, 620);
-  //drawBeeButton.size(200);
-  //drawPenguinButton = createButton("draw a penguin");
-  //drawPenguinButton.position(1400, 620);
-  //drawPenguinButton.size(200);
-  //cowImg.mousePressed(drawCow);
   cowImg.position(0.02 * window.innerWidth, 0.3 * window.innerHeight);
   beeImg.position(0.355 * window.innerWidth, 0.3 * window.innerHeight);
   penguinImg.position(0.69 * window.innerWidth, 0.3 * window.innerHeight);
@@ -50,22 +34,14 @@ function setup() {
   howToBeeStep1.hide();
   howToBeeStep2.hide();
   howToBeeStep3.hide();
+  howToPenguinStep1.hide();
+  howToPenguinStep2.hide();
+  howToPenguinStep3.hide();
 }
 
-
-
-function drawPenguin() {
-  cowImg.hide();
-  beeImg.hide();
-  penguinImg.hide();
-  drawCowButton.hide();
-  drawBeeButton.hide();
-  drawPenguinButton.hide();
-}
-
-function howToBee() {
-  howToBeeStep1.show();
-}
+//function howToBee() {
+  //howToBeeStep1.show();
+//}
 
 function draw() {
   cowImg.mousePressed(drawCow);
@@ -101,6 +77,21 @@ function drawBee() {
   drawCowButton.hide();
   drawBeeButton.hide();
   drawPenguinButton.hide();
-  howToBee();
+  //howToBee();
+}
+
+function drawPenguin() {
+  howToPenguinStep1.position(0.02 * window.innerWidth, 0.3 * window.innerHeight);
+  howToPenguinStep1.show();
+  howToPenguinStep2.position(0.355 * window.innerWidth, 0.3 * window.innerHeight);
+  howToPenguinStep2.show();
+  howToPenguinStep3.position(0.69 * window.innerWidth, 0.3 * window.innerHeight);
+  howToPenguinStep3.show();
+  cowImg.hide();
+  beeImg.hide();
+  penguinImg.hide();
+  drawCowButton.hide();
+  drawBeeButton.hide();
+  drawPenguinButton.hide();
 }
 
