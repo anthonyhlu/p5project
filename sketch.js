@@ -1,10 +1,6 @@
-let cowButton, chickenButton, pigButton, penguinButton;
-let nextStepButton, drawCowButton, drawPigBbutton, drawPenguinButton, drawBeeButton;
 var cowImg;
-let chickenImg;
-let pigImg;
-let penguinImg;
-let howToPenguin;
+var penguinImg;
+var beeImg;
 
 function preload() {
   cowImg = createImg("https://i.imgur.com/EUFLyLD.jpg"); 
@@ -26,8 +22,7 @@ function setup() {
   cowImg.position(0.02 * window.innerWidth, 0.3 * window.innerHeight);
   beeImg.position(0.355 * window.innerWidth, 0.3 * window.innerHeight);
   penguinImg.position(0.69 * window.innerWidth, 0.3 * window.innerHeight);
-  beeImg.mousePressed(drawBee);
-  penguinImg.mousePressed(drawPenguin);
+  
   howToCowStep1.hide();
   howToCowStep2.hide();
   howToCowStep3.hide();
@@ -39,13 +34,10 @@ function setup() {
   howToPenguinStep3.hide();
 }
 
-//function howToBee() {
-  //howToBeeStep1.show();
-//}
-
 function draw() {
   cowImg.mousePressed(drawCow);
-  
+  beeImg.mousePressed(drawBee);
+  penguinImg.mousePressed(drawPenguin);
 }
 
 function drawCow() {
@@ -77,7 +69,6 @@ function drawBee() {
   drawCowButton.hide();
   drawBeeButton.hide();
   drawPenguinButton.hide();
-  //howToBee();
 }
 
 function drawPenguin() {
